@@ -1,0 +1,18 @@
+#!/bin/bash
+
+sudo yum groupinstall "Development Tools" -y
+sudo yum install ncurses ncurses-devel -y
+
+# Download sources for htop and make and install
+echo "Download sources for htop and make and install"
+wget https://hisham.hm/htop/releases/2.2.0/htop-2.2.0.tar.gz
+tar -xvzf htop-2.2.0.tar.gz
+cd htop-2.2.0
+sudo ./configure --prefix=/usr/local
+sudo make
+sudo make install
+cd ..
+
+# Run: htop -v
+echo "Run: htop -v"
+htop -v
