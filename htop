@@ -11,6 +11,7 @@ sudo ./configure --prefix=/usr/local
 sudo make
 sudo make install
 cd ..
+rm -rf htop-2.2.0 htop-2.2.0.tar.gz
 
 # Run: htop -v
 echo "Run: htop -v"

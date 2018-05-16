@@ -11,6 +11,7 @@ sudo ./configure --prefix=/usr/local
 sudo make
 sudo make install
 cd ..
+rm -rf libevent-2.1.8-stable libevent-2.1.8-stable.tar.gz
 
 # Download sources for tmux and make and install
 wget https://github.com/tmux/tmux/releases/download/2.7/tmux-2.7.tar.gz
@@ -20,6 +21,7 @@ sudo LDFLAGS="-L/usr/local/lib -Wl,-rpath=/usr/local/lib" ./configure --prefix=/
 sudo make
 sudo make install
 cd ..
+rm -rf tmux-2.7 tmux-2.7.tar.gz
 
 # Reopen your terminal and run: tmux -V
 echo "Reopen your terminal and run: tmux -V"
