@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo yum groupinstall "Development Tools" -y
+sudo yum install zlib-devel -y
+
+# Download sources
+wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+tar -xvf Python-3.6.5.tgz
+cd Python-3.6.5
+sudo ./configure
+sudo make
+sudo make altinstall
+
+# Run: python --version
+python3.6 --version
