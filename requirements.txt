@@ -1,0 +1,5 @@
+requests>=2.18.4
+twsecli>=0.6.1
+tldr>=0.4.4
+zdict>=0.12.1
+ruamel.yaml>=0.15.40
