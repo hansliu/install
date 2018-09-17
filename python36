@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo yum groupinstall "Development Tools" -y
-sudo yum install zlib-devel -y
+sudo yum install zlib-devel openssl openssl-devel -y
 
 # Download sources
 wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
